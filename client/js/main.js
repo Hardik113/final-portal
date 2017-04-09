@@ -42,7 +42,7 @@ $(document).ready(function(){
     $('.submit-button').click(function(event){
        var bool = validate();
             if(bool){
-                 $('.confirm-con').append("<p id = 'info'>Registration Number: "+$('[name = "regno"]').val()+"</p><p id = 'info'>Name: "+$('[name = "full_name"]').val()+"</p><p id = 'info'>Mobile: "+$('[name = "mob"]').val()+"</p><p id = 'info'>Email: "+$('[name = "email"]').val()+"</p><p id = 'info'>Room: "+$('[name = "room"]').val()+"</p><p id = 'info'>Gender: "+$('[name = "gender"]').val()+"</p>"+"</p><p id = 'info'>ADG Member Key: "+$('[name = "adg_key"]').val()+"</p>")
+                 $('.confirm-con').append("<p id = 'info'>Registration Number: "+$('[name = "regno"]').val()+"</p><p id = 'info'>Name: "+$('[name = "full_name"]').val()+"</p><p id = 'info'>Mobile: "+$('[name = "mob"]').val()+"</p><p id = 'info'>Email: "+$('[name = "email"]').val()+"</p><p id = 'info'>Room: "+$('[name = "room"]').val()+"</p><p id = 'info'>Gender: "+$('[name = "gender"]').val()+"</p>")
                 $('.modal-content').css('display','none');
                 $("#confirm-modal").css('display','block');
             }
