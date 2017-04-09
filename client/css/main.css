@@ -232,7 +232,7 @@ form{
     margin-top:-5%;
 }
 
-[type="text"],[type="passsword"]{
+[type="text"],[type="password"]{
     height:10%;
     width:100%;
     margin:1% auto;
