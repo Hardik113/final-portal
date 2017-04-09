@@ -232,7 +232,7 @@ form{
     margin-top:-5%;
 }
 
-[type="text"]{
+[type="text"],[type="passsword"]{
     height:10%;
     width:100%;
     margin:1% auto;
@@ -363,7 +363,7 @@ label {
 }
 
 
-[type="text"]{
+[type="text"],[type="password"]{
     height: 10%;
 }
 
@@ -422,7 +422,7 @@ label {
     width: 100%;
 }
 
-[type="text"]{
+[type="text"],[type="password"]{
     height: 70px;
 }
 
@@ -447,7 +447,7 @@ label {
     font-size: 30px;
 }
 
-[type="text"]{
+[type="text"],[type="password"]{
     height: 8%;
     font-size: 15px;
 }
