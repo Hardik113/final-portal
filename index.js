@@ -8,6 +8,8 @@ participant = require('./models/participant');
 
 var  url = "mongodb://admin:qwerty12345@ds137530.mlab.com:37530/workshoponar";
 
+var collectionName = 'keys';
+
 mongoose.connect(url);
 
 var keys = mongoose.model('keys', {
@@ -49,8 +51,8 @@ app.get('/', function(req, res){
 });*/
 
 app.post('/sendmail',urlencodedParser ,function(req, res){
-  var keyValid = false;
-  var key = req.body.key;
+  
+  var key = req.body.adg_key;
   var keyArray = key.split("");
   if(keyArray.length == 6 && keyArray[0]=="A" && keyArray[1]=="d" && keyArray[2]=="g" && keyArray[3]<=1 && keyArray[4]<=9 && keyArray[5]<=9 ){
 
@@ -61,7 +63,7 @@ app.post('/sendmail',urlencodedParser ,function(req, res){
                 if(err){
                   console.log(err);
                 }
-                keyValid = true;
+
               });
 
 
@@ -71,7 +73,8 @@ app.post('/sendmail',urlencodedParser ,function(req, res){
 		gender:req.body.gender,
 		mobile:req.body.mob,
 		email:req.body.email,
-		room:req.body.room
+		room:req.body.room,
+    key:req.body.adg_key
 	});
 
 	participantToAdd.save(function(err) {
