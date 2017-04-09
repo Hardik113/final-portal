@@ -1,5 +1,6 @@
+var mongoose = require('mongoose');
+
 //Participant Schema
-const mongoose = require('mongoose');
 
 var participantSchema = mongoose.Schema({
     name:{
@@ -18,6 +19,9 @@ var participantSchema = mongoose.Schema({
       type:String,
     },
     room:{
+      type:String,
+    },
+    key:{
       type:String,
     }
 });

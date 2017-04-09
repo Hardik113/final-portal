@@ -1,7 +1,7 @@
 {
-  "name": "web_mail",
+  "name": "admin_portal",
   "version": "1.0.0",
-  "description": "Send mail to a mail id from HTML forms",
+  "description": "Admin portal for validating registrations",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +12,7 @@
     "body-parser": "*",
     "ejs": "*",
     "express": "*",
-    "mongoose": "^4.9.1",
+    "mongoose": "*",
     "nodemailer": "*"
   }
 }
