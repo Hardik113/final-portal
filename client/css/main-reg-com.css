@@ -1,0 +1,199 @@
+@font-face{
+    font-family:rb;
+    src:url("roboto.thin.ttf");
+}
+
+
+@font-face{
+    font-family:rb;
+    src:url("roboto.bold.ttf");
+}
+
+body,html {
+    width: 100%;
+    margin: 0;
+}
+
+.slide-show {
+    height: 100%;
+}
+
+.slide-show-window {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.slide-show-slides {
+    height: 100%;
+    width: 400%;
+    font-size: 0;
+    transition: transform 2s;
+}
+
+.slide-show-tile {
+    height: 100%;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#tile-1 {
+    background-image:url('../img/img-1.jpg');
+}
+
+#tile-2 {
+    background-image:url('../img/img-2.jpg');
+}
+
+#tile-3 {
+    background-image:url('../img/img-3.jpg');
+}
+
+#tile-4 {
+    background-image:url('../img/imag-4.jpg');
+}
+
+.main-content{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+}
+
+.adg-logo{
+    height: 7%;
+    width: auto;
+    margin: 5% 0;
+}
+
+.war-logo {
+    height:22%;
+    width:47%;
+    margin:3% auto;
+    position: relative;
+    margin-top: -2%;
+}
+
+.war-logo:after{
+    position:absolute;
+    content:'';
+    height:6px;
+    width:130%;
+    bottom:-10%;
+    left:-15%;
+    background: white;
+}
+
+.war-logo img {
+    height:100%;
+    width: auto;
+    opacity: 0.8;
+}
+
+.sub-title{
+    font-size: 40px;
+    color: white;
+    font-family: rb;
+    opacity: 0.8;
+}
+
+.sub-con {
+    font-size: 20px;
+    color: white;
+    font-family: rb;
+    opacity: 0.8;
+}
+
+.main-con {
+   font-size: 30px;
+    color: white;
+    font-family: rb;
+    opacity: 0.8;
+}
+
+.goback {
+    height: 7%;
+    width:17%;
+    outline: none;
+    border: none;
+    background: #1DC59F;
+    border-radius: 5px;
+    margin: 2% 0;
+    color: white;
+    font-family: rb;
+    text-transform: uppercase;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width:786px) and (orientation:portrait){
+
+.adg-logo{
+    margin-top: 25%;
+}
+
+.war-logo {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.war-logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.war-logo:after {
+    left: 0;
+    width: 100%;
+}
+
+.sub-title {
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+
+
+.main-con {
+    margin-top: -2%;
+}
+
+.goback {
+    width: 35%;
+    font-size: 20px;
+
+}
+}
+
+
+@media only screen and (max-width:786px) and (orientation:landscape){
+
+.sub-title {
+    font-size: 20px;
+}
+
+.main-con {
+    margin-top: -2%;
+}
+
+.goback {
+    font-size: 15px;
+    margin-top: 7%;
+}
+
+.sub-con {
+    margin-top: -1%;
+    font-size: 20px;
+}
+
+}

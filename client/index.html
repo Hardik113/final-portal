@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width,initial-scale=1">
+        <title>WAR | Into the Future</title>
+        <link href = "css/main.css" rel = "stylesheet" type = "text/css">
+    </head>
+<body>
+<div class = "main-content">
+    <img class = "adg-logo" src = "img/adglogo.svg">
+    <div class = "war-logo">
+        <img src = "img/WarLogo.png">
+    </div>
+    <p class = "sub-title">Workshop on Augumented Reality</p>
+    <div class = "content">
+        <div class = "con">
+            <p><span><strong>22nd-23rd</strong></span><br>April 2017</p>
+        </div>
+        <div class = "con">
+                <p><span><strong>250+</strong></span><br>Participants</p>
+        </div>
+        <div class = "con">
+                <p><span><strong>Rs 200</strong></span><br>Registration Fees</p>
+        </div>
+       <div id = "con-2" class = "static-con">
+            <p>In Collaboration with<br><span>SCOPE</span></p>
+        </div>
+    </div>
+    <button class = "register">register</button>
+</div>
+<div class = "slide-show">
+    <div class = "slide-show-window">
+        <div class = "slide-show-slides">
+            <div id = "tile-1" class = "slide-show-tile">
+            </div>
+            <div id = "tile-2" class = "slide-show-tile">
+            </div>
+            <div id = "tile-3" class = "slide-show-tile">
+            </div>
+            <div id = "tile-4" class = "slide-show-tile">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal-box">
+    <div id ="pay-confirm" class = "modal-content pop">
+        <span class="close">&times;</span>
+        <p>Mode of Payment</p>
+        <a href = "http://info.vit.ac.in/workshop2017/war/apply.asp"><button type = "button" class = "online">Online Payment</button></a>
+        <button type = "button" class = "offline">Offline Payment</button>
+    </div>
+    <div id = "form-modal" class="modal-content pop">
+        <span class="close">&times;</span>
+        <p>Register</p>
+        <form id = "form" method = "POST" action = "http://adg-war.herokuapp.com/sendmail">
+            <input type="text" name="regno" placeholder="Registration number">
+            <input type="text" name="full_name" placeholder="Full Name">
+             <input type="text" name="email" placeholder="Email">
+            <input type="text" name="mob" placeholder="Mobile Number">
+            <input type="text" name="room" placeholder="Room Number with Block">
+            <input type="text" name="adg_key" placeholder="ADG Member Key">
+            <ul>
+                <li>
+                    <div class = "radio-content">
+                        <input type = "radio" name = "gender" value = "male" class = "radio-button">
+                        <label for = "male">Male</label>
+                    </div>
+                </li>
+                <li>
+                    <div class = "radio-content">
+                        <input type = "radio" name = "gender" value = "female" class = "radio-button">
+                        <label for = "male">Female</label>
+                    </div>
+                </li>
+            </ul>
+            <button type = "button" class="submit-button">Submit</form>
+        </form>
+    </div>
+    <div id = "confirm-modal" class = "modal-content pop">
+        <p>Confirm your Details</p>
+        <span class="close">&times;</span>
+        <div class = "confirm-con">
+        </div>
+        <button type = "button" class="confirm-button">Confirm</button>
+    </div>
+</div>
+
+
+<script src = "js/jquery.js"></script>
+<script src = "js/main.js"></script>
+</body>
+</html>

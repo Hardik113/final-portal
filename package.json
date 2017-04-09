@@ -1,0 +1,18 @@
+{
+  "name": "web_mail",
+  "version": "1.0.0",
+  "description": "Send mail to a mail id from HTML forms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dishant Sheth",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "*",
+    "express": "*",
+    "mongoose": "^4.9.1",
+    "nodemailer": "*"
+  }
+}
